@@ -1,4 +1,3 @@
-<div class="fade in"><a class="close" data-dismiss="alert" href="#">×</a>
 <?php
 /**
  * SQL Dump element. Dumps out SQL log information
@@ -21,6 +20,8 @@
 if (!class_exists('ConnectionManager') || Configure::read('debug') < 2) {
 	return false;
 }
+echo '<div class="fade in"><a class="close" data-dismiss="alert" href="#">×</a>';
+
 $noLogs = !isset($logs);
 if ($noLogs):
 	$sources = ConnectionManager::sourceList();
