@@ -48,7 +48,7 @@
 		</div>
 	</div>
 	<?php
-		echo $this->Html->script('jquery.min.js');
+		echo $this->Html->script('jquery.min');
 		echo $this->Html->script('bootstrap.min');
 		echo $this->fetch('script');
 	?>
